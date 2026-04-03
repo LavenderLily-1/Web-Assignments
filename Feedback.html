@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .form-container { max-width: 500px; margin: auto; padding: 20px; border: 1px solid #ccc; border-radius: 10px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input[type=text], input[type=email], input[type=tel], select, textarea {
+            width: 100%; padding: 8px; box-sizing: border-box;
+        }
+        .rating-group { margin-bottom: 10px; }
+        .radio-inline { display: inline; font-weight: normal; margin-right: 10px; }
+        button { padding: 10px 15px; cursor: pointer; }
+        .submit-btn { background-color: #4CAF50; color: white; border: none; }
+        .reset-btn { background-color: #f44336; color: white; border: none; }
+    </style>
+</head>
+<body>
+    
+<div class="form-container">
+    <h2>Course Feedback Form</h2>
+    <form action="/submit-feedback" method="post">
+        
+        <!-- Basic Information -->
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="student_name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="student_email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone No:</label>
+            <input type="tel" id="phone" name="student_phone">
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department_name" required>
+        </div>
+
+        <!-- Subject Ratings -->
+        <h3>Subject Ratings (1-5)</h3>
+        
+        <div class="rating-group">
+            <label>Mathematics:</label>
+            <input type="radio" name="maths_rating" value="1" required> 1
+            <input type="radio" name="maths_rating" value="2"> 2
+            <input type="radio" name="maths_rating" value="3"> 3
+            <input type="radio" name="maths_rating" value="4"> 4
+            <input type="radio" name="maths_rating" value="5"> 5
+        </div>
+
+        <div class="rating-group">
+            <label>Programming:</label>
+            <input type="radio" name="prog_rating" value="1" required> 1
+            <input type="radio" name="prog_rating" value="2"> 2
+            <input type="radio" name="prog_rating" value="3"> 3
+            <input type="radio" name="prog_rating" value="4"> 4
+            <input type="radio" name="prog_rating" value="5"> 5
+        </div>
+
+        <div class="rating-group">
+            <label>Chemical Engineering:</label>
+            <input type="radio" name="chem_rating" value="1" required> 1
+            <input type="radio" name="chem_rating" value="2"> 2
+            <input type="radio" name="chem_rating" value="3"> 3
+            <input type="radio" name="chem_rating" value="4"> 4
+            <input type="radio" name="chem_rating" value="5"> 5
+        </div>
+
+        <div class="form-group">
+            <label>Feedback: <textarea name="feedback" rows="4"></textarea></label>
+        </div>
+
+        <div class="button-group">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
