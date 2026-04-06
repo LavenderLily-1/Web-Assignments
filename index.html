@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #d86bb3;
+}
+
+/* NAVBAR */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-style: italic;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* SECTION COMMON */
+section {
+    padding: 40px;
+}
+
+/* HOME */
+.home {
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 40px;
+    font-style: italic;
+}
+
+.subtitle {
+    color: red;
+    font-weight: bold;
+}
+
+.about-text {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    line-height: 1.6;
+}
+
+/* SKILLS */
+.skills {
+    text-align: center;
+}
+
+.skill-box {
+    display: inline-block;
+    background: black;
+    color: yellow;
+    padding: 15px 40px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+/* PROJECTS */
+.projects {
+    margin-top: 20px;
+}
+
+.projects p {
+    font-weight: bold;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+}
+
+.oval {
+    background: #b85bb0;
+    padding: 20px;
+    margin: 30px auto;
+    width: 60%;
+    border-radius: 50px;
+    font-size: 18px;
+}
+
+.highlight {
+    color: yellow;
+    font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">Portfolio</div>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT ME</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+</header>
+
+<!-- HOME / ABOUT -->
+<section id="home" class="home">
+    <h1>Sanatana Kavyamrutha</h1>
+    <p class="subtitle">Student | Aspiring UI/UX Designer</p>
+
+    <div class="about-text">
+        <p>
+        I am a motivated and enthusiastic student with an interest in designing
+        user-friendly interfaces and learning new technologies. I enjoy creating
+        simple and clean designs and continuously improving my skills in UI/UX
+        and web development.
+        </p>
+
+        <p>
+        I am always eager to learn new technologies and improve my skills through
+        practice and real-time projects. I have basic knowledge of HTML, CSS,
+        Java, and designing tools like Figma.
+        </p>
+
+        <p>
+        I am a quick learner, a good problem solver, and I like working both
+        independently and in a team. My goal is to build creative and efficient
+        digital solutions while continuously growing in the field of technology.
+        </p>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="skills">
+    <h3>SKILLS</h3>
+
+    <div>
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JAVA</div>
+    </div>
+
+    <div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">PYTHON</div>
+        <div class="skill-box">DS</div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div id="projects" class="projects">
+        <h3>PROJECTS</h3>
+        <p>★ Student Record System</p>
+        <p>★ Calculator UI Design</p>
+        <p>★ Portfolio Website</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+
+    <div class="oval">
+        Email : <span class="highlight">lavender@gmail.com</span>
+    </div>
+
+    <div class="oval">
+        Linkedin : <span class="highlight">linkedin.com/in/lavender</span>
+    </div>
+
+    <div class="oval">
+        Phone no : <span class="highlight">+91 89116 77605</span>
+    </div>
+
+    <div class="oval">
+        Instagram : <span class="highlight">lily_blossom7</span>
+    </div>
+
+</section>
+
+</body>
+</html>
