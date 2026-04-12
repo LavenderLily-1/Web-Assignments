@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Basics</title>
+</head>
+<body>
+
+<h3>My JavaScript Program</h3>
+
+<script>
+    // Variables
+    var a = 10;
+    var b = 5;
+
+    // console.log
+    console.log("a = " + a);
+    console.log("b = " + b);
+
+    // document.write
+    document.write("a = " + a + "<br>");
+    document.write("b = " + b + "<br>");
+
+    // + and -
+    var sum = a + b;
+    var sub = a - b;
+
+    document.write("Sum = " + sum + "<br>");
+    document.write("Subtraction = " + sub + "<br>");
+
+    // Concatenation 
+    // runtime input
+    var firstName = prompt("Enter your first name:");
+    var lastName = prompt("Enter your last name:");
+    var fullName = firstName + " " + lastName;
+
+    // Output
+    document.write("Your Full Name is: " + fullName + "<br>");
+
+    // == and ===
+    var x = "10";
+
+    console.log("a == x : " + (a == x));
+    console.log("a === x : " + (a === x));
+
+    // alert
+    alert("Welcome!");
+
+    // prompt
+    var name = prompt("Enter your name:");
+
+    // confirm
+    var like = confirm("Do you like JavaScript?");
+
+    // output
+    document.write("Hello " + name + "<br>");
+
+    if(like == true) {
+        document.write("You like JavaScript<br>");
+    } else {
+        document.write("You don't like JavaScript<br>");
+    }
+</script>
+</body>
+</html>
